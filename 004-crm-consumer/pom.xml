@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <artifactId>crm</artifactId>
+        <artifactId>001-crm-parent</artifactId>
         <groupId>com.zrf.crm</groupId>
         <version>1.0.0</version>
         <relativePath>../001-crm-parent/pom.xml</relativePath>
