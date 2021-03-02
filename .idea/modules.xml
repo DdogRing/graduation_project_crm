@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/001-crm-parent/001-crm-parent.iml" filepath="$PROJECT_DIR$/001-crm-parent/001-crm-parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../002-crm-interface/002-crm-interface.iml" filepath="$PROJECT_DIR$/../002-crm-interface/002-crm-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/002-crm-interface/002-crm-interface.iml" filepath="$PROJECT_DIR$/002-crm-interface/002-crm-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/003-crm-provide/003-crm-provide.iml" filepath="$PROJECT_DIR$/003-crm-provide/003-crm-provide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/004-crm-consumer/004-crm-consumer.iml" filepath="$PROJECT_DIR$/004-crm-consumer/004-crm-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/005-crm-common/005-crm-common.iml" filepath="$PROJECT_DIR$/005-crm-common/005-crm-common.iml" />
     </modules>
   </component>
 </project>

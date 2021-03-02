@@ -11,9 +11,9 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.zrf</groupId>
-    <artifactId>003-crm-provide</artifactId>
+    <artifactId>004-crm-consumer</artifactId>
     <version>1.0.0</version>
-    <name>003-crm-provide</name>
+    <name>004-crm-consumer</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -24,39 +24,16 @@
     </properties>
 
     <dependencies>
+        <!--spring-boot-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--thymeleaf模板引擎-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <!--redis-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-
-        <!--mysql-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-        <!--mybatis-->
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
         <!--dubbo-->
@@ -78,6 +55,17 @@
             <version>1.0.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -121,8 +109,20 @@
                 </executions>
             </plugin>
 
+            <!--编译插件-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <!--编译级别-->
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <!--编译格式(字符集)-->
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
         </plugins>
-
         <resources>
             <resource>
                 <directory>src/main/java</directory>
@@ -148,7 +148,6 @@
                 </includes>
             </resource>
         </resources>
-
     </build>
 
 </project>

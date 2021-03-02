@@ -4,8 +4,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/001-crm-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/../002-crm-interface/pom.xml" />
         <option value="$PROJECT_DIR$/003-crm-provide/pom.xml" />
+        <option value="$PROJECT_DIR$/004-crm-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/005-crm-common/pom.xml" />
+        <option value="$PROJECT_DIR$/002-crm-interface/pom.xml" />
       </list>
     </option>
   </component>

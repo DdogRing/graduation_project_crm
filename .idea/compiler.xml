@@ -8,12 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="003-crm-provide" />
         <module name="002-crm-interface" />
+        <module name="005-crm-common" />
+        <module name="004-crm-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="001-crm-parent" target="1.8" />
       <module name="002-crm-interface" target="1.5" />
       <module name="003-crm-provide" target="1.8" />
+      <module name="004-crm-consumer" target="1.8" />
+      <module name="005-crm-common" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
